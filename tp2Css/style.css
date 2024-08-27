@@ -1,0 +1,190 @@
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(230, 239, 236);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 5rem;
+    background-color: rgb(59, 57, 57);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.ejercisio{
+    margin: 1rem 0;
+    padding: 0.6rem 0.3rem ;
+    background-color: aliceblue;
+    width: 90%;
+}
+.header_blockquote{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform:none;
+    text-decoration: none;
+    color: white;
+}
+.segundo__ejer__blockquote{
+    padding: 1.2rem;
+}
+.segundo__ejer__blockquote h2{
+    text-transform: inherit;
+    font-size: 1rem;
+    padding-bottom: 1.3vh;
+    border-bottom: 1px solid black;
+}
+.segundo__ejer__blockquote p{
+    padding: 1.2rem 0.4rem;;
+  }
+.segundo__ejer__blockquote p:first-of-type {
+    text-decoration:underline;
+    text-transform: capitalize;
+  }
+
+  .segundo__ejer__blockquote p:nth-of-type(2){
+    padding-inline-start: 2vh 0;
+    background-color: rgba(128, 128, 128, 0.118);
+   font-style: italic;
+
+  }
+ 
+.ejer2_caja{
+    width: 80%;
+    padding: 1.4rem;
+    margin: 0.4rem 0 ;
+
+}
+
+.caja1{
+
+    border: 1px solid black ;
+    background-color: grey;
+}
+.caja2{
+
+    border: 3px solid black ;
+    background-color: rgb(233, 182, 93);
+    box-shadow: 3px 3px 10px 0px ;
+}
+
+.ejer3_caja{
+    margin: 1rem 0;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+}
+ h3{
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0.4rem ;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.relativo{
+    position: relative;
+    top:0 ;
+    left:0 ;
+    background-color: lightblue;    
+}
+.absoluto{
+    width: 40%;
+    position: absolute;
+    top:  670px;
+    left: 50% ;
+    background-color:lightseagreen ;
+
+}
+.grid-container{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 0.5rem;
+}
+.grid-item{
+    background-color: rgb(164, 109, 217);
+    color: white;
+    text-align: center;
+    padding: 0.7rem 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.animacion , .mover{
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem ;
+}
+.animacion{
+    background-color: red;
+}
+.animacion:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.mover{
+    background-color: green;
+    border-radius: 50%;
+    animation-name: moverIzquierdaDerecha;
+    animation-duration: 2s;    
+    animation-iteration-count: infinite;
+}
+@keyframes moverIzquierdaDerecha{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20vw);
+    }
+}
+
+@media only screen and (max-width:768px ){
+    body{
+       background-color: rgb(224, 164, 224);
+
+    }
+    h1{
+        font-size: 1rem;
+    }
+    header{
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    .header_blockquote{
+        height: 6rem;
+
+
+    }
+    .ejercisio{
+        font-size: 0.8rem;
+
+        width: 80%;
+        padding: 1.2rem;
+        
+    }
+    .ejer3_caja{
+        margin: 0.5rem 0;
+        padding: 0.6rem;
+    }
+    .absoluto{
+        top: 740px;
+        left: 40%;
+        width: 50%;
+    }
+
+}
