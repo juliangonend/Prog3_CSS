@@ -25,7 +25,7 @@ header{
     justify-content: center;
     padding: 2rem 0;
 }
-.ejercisio{
+.ejercicio{
     margin: 1rem 0;
     padding: 0.6rem 0.3rem ;
     background-color: aliceblue;
@@ -170,7 +170,7 @@ header{
 
 
     }
-    .ejercisio{
+    .ejercicio{
         font-size: 0.8rem;
 
         width: 80%;
